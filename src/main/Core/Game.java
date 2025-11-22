@@ -120,7 +120,7 @@ public class Game extends Canvas implements Runnable{
 	    GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
 	    int refreshRate = gd.getDisplayMode().getRefreshRate();
 	    if(refreshRate <= 0) {
-	    	refreshRate = 144;
+	    	refreshRate = 120;
 	    }
 	    
 	    
@@ -191,7 +191,7 @@ public class Game extends Canvas implements Runnable{
 		if(gameState == STATE.Game) {
 			if(!paused) {
 				hud.tick();
-				//spawner.tick();
+				spawner.tick();
 				handler.tick();
 				
 				

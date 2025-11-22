@@ -20,7 +20,7 @@ public class Splitter extends GameObject{
 	private Spawn spawn;
 	Random r = new Random();
 	private int speed = 3;
-	private int decayTimer = 800;
+	private int decayTimer = 900; //800
 	private int timer = 3;
 	private double step = 0.2d;
 	

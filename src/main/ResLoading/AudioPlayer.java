@@ -20,7 +20,7 @@ public class AudioPlayer {
             play.open(menuSound);
 
             // Start playing the sound off at a lower volume
-            setVolume(0.4f); // Example: start with 20% volume.
+            setVolume(0.8f); // Example: start with 20% volume.
 
             play.start();
             while (!play.isRunning()) {
