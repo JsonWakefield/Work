@@ -14,6 +14,8 @@ import java.util.Random;
 
 import main.Menu;
 import main.Player;
+import main.Enemies.Dasher;
+import main.Enemies.Splitter;
 
 public class Game extends Canvas implements Runnable{
 
@@ -82,7 +84,7 @@ public class Game extends Canvas implements Runnable{
 		if(gameState == STATE.Game) {
 			
 			handler.addObject(new Player(WIDTH/2 - 32,HEIGHT/2 -32, ID.Player, handler));
-			//handler.addObject(new BasicEnemy(r.nextInt((int) (Game.WIDTH - 50)),r.nextInt((int) (Game.HEIGHT - 50)),ID.Enemy,handler));
+			//handler.addObject(new Dasher((int) Game.WIDTH / 2 -60,(int) Game.HEIGHT ,ID.Enemy,handler));
 		}
 	}
 	
@@ -189,7 +191,7 @@ public class Game extends Canvas implements Runnable{
 		if(gameState == STATE.Game) {
 			if(!paused) {
 				hud.tick();
-				spawner.tick();
+				//spawner.tick();
 				handler.tick();
 				
 				

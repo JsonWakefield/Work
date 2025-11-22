@@ -72,13 +72,14 @@ public class Menu extends MouseAdapter {
                 AudioPlayer.playGameSound();  // Start playing game music
                 
                 handler.addObject(new Player(Game.WIDTH / 2 - 32, Game.HEIGHT / 2 - 32, ID.Player, handler));
+                handler.addObject(new Dasher((Game.WIDTH / 4) - 45, 150, ID.Enemy,handler));
                /* handler.addObject(new Snake((Game.WIDTH / 2) - 45, 20, ID.Enemy,handler));
                 handler.addObject(new Snake((Game.WIDTH / 4) - 45, 20, ID.Enemy,handler));
                 handler.addObject(new Snake((Game.WIDTH / 6) - 45, 20, ID.Enemy,handler));
                 */
                 //handler.addObject(new Dasher((Game.WIDTH / 4) - 45, 40, ID.Enemy,handler));
                 
-                handler.addObject(new BasicEnemy(r.nextInt((int) (Game.WIDTH - 50)), r.nextInt((int) (Game.HEIGHT - 50)), ID.Enemy, handler));
+                //handler.addObject(new BasicEnemy(r.nextInt((int) (Game.WIDTH - 50)), r.nextInt((int) (Game.HEIGHT - 50)), ID.Enemy, handler));
             }
         	
         	if (mouseOver(mx, my, 600, 400, 200, 50)) {		// Hard Difficulty
